@@ -1,5 +1,7 @@
 packages:
   - packages/*
 
-overrides:
-  smooth-dnd: link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd
+# `example` pulls in esbuild via Vite. CI installs with --ignore-scripts and
+# never builds the example, so this only matters for local development.
+onlyBuiltDependencies:
+  - esbuild
