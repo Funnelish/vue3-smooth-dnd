@@ -5,9 +5,12 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "yarn workspace example dev",
-    "deploy": "yarn workspace example deploy",
-    "lib:watch": "yarn workspace vue3-smooth-dnd run build:watch",
-    "lib": "yarn workspace vue3-smooth-dnd run build"
+    "dev": "pnpm --filter example dev",
+    "deploy": "pnpm --filter example deploy",
+    "lib:watch": "pnpm --filter vue3-smooth-dnd build:watch",
+    "lib": "pnpm --filter vue3-smooth-dnd build"
+  },
+  "dependencies": {
+    "smooth-dnd": "link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd"
   }
 }

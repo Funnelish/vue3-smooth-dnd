@@ -1,0 +1,5 @@
+packages:
+  - packages/*
+
+overrides:
+  smooth-dnd: link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd
