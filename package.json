@@ -1,16 +1,14 @@
 {
   "name": "monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "packageManager": "pnpm@11.1.0",
+  "engines": {
+    "node": ">=22.13"
+  },
   "scripts": {
     "dev": "pnpm --filter example dev",
     "deploy": "pnpm --filter example deploy",
-    "lib:watch": "pnpm --filter vue3-smooth-dnd build:watch",
-    "lib": "pnpm --filter vue3-smooth-dnd build"
-  },
-  "dependencies": {
-    "smooth-dnd": "link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd"
+    "lib:watch": "pnpm --filter @funnelish/vue3-smooth-dnd build:watch",
+    "lib": "pnpm --filter @funnelish/vue3-smooth-dnd build"
   }
 }
