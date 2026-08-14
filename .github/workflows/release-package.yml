@@ -146,6 +146,9 @@ jobs:
         with:
           subject-path: 'artifact/*.tgz'
 
+      # `npm publish <tarball>` deliberately, not pnpm: this job installs
+      # nothing, so it needs no package manager beyond the one bundled with
+      # Node. pnpm publish expects a project directory, not a tarball.
       - name: Publish
         run: npm publish artifact/*.tgz --ignore-scripts
         env:
