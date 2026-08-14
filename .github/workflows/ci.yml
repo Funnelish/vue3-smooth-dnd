@@ -38,10 +38,13 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@funnelish'
 
+      # NPM_AUTH_TOKEN, not GITHUB_TOKEN: @funnelish/smooth-dnd is published by
+      # a different repo, and this repo's GITHUB_TOKEN has no read access to
+      # it (403). Same org-level secret fnsh_base already installs with.
       - name: Install dependencies
         run: pnpm install --filter @funnelish/vue3-smooth-dnd... --frozen-lockfile --ignore-scripts
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Build library
         run: pnpm --filter @funnelish/vue3-smooth-dnd build
