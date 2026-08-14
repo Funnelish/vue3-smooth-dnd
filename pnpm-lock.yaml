@@ -4,16 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  smooth-dnd: link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd
-
 importers:
 
-  .:
-    dependencies:
-      smooth-dnd:
-        specifier: link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd
-        version: link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd
+  .: {}
 
   packages/example:
     dependencies:
@@ -31,7 +24,7 @@ importers:
         version: 4.6.4(vue@3.5.41)
       vue3-smooth-dnd:
         specifier: file:../lib
-        version: file:packages/lib(vue@3.5.41)
+        version: link:../lib
       vuex:
         specifier: ^4.0.1
         version: 4.1.0(vue@3.5.41)
@@ -61,8 +54,8 @@ importers:
   packages/lib:
     dependencies:
       smooth-dnd:
-        specifier: link:../../../../../../Library/pnpm/global/5/node_modules/smooth-dnd
-        version: link:../../../../../../Library/pnpm/global/5/node_modules/smooth-dnd
+        specifier: npm:@funnelish/smooth-dnd@^1.0.0
+        version: '@funnelish/smooth-dnd@1.0.0'
     devDependencies:
       rollup:
         specifier: ^2.43.0
@@ -99,6 +92,10 @@ packages:
     engines: {node: '>=12'}
     cpu: [loong64]
     os: [linux]
+
+  '@funnelish/smooth-dnd@1.0.0':
+    resolution: {integrity: sha512-4WNparc7OVj4i740pOxEsj/Egs8TV7IM7RZlCSSM5m0CHxCRu97v/xcj5nz+Q/bLklu6AL1P0K5jW3IrZTMRUg==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.0/41b23a39c236d2f714002b81504bd41c11462e17}
+    engines: {node: '>=22.13'}
 
   '@headlessui/vue@1.7.23':
     resolution: {integrity: sha512-JzdCNqurrtuu0YW6QaDtR2PIYCKPUWq28csDyMvN4zmGccmE7lz40Is6hc3LA4HFeCI7sekZ/PQMTNmn9I/4Wg==}
@@ -917,11 +914,6 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  vue3-smooth-dnd@file:packages/lib:
-    resolution: {directory: packages/lib, type: directory}
-    peerDependencies:
-      vue: ^3.5.41
-
   vue@3.5.41:
     resolution: {integrity: sha512-2laE0p+aK+/AOPG/XL/WepOs/GlK755LJ1XECi9kDUrz1FKNw8rb2Xzlw9JS1rqEV55nb0ttsKxVlTCcd+R5cg==}
     peerDependencies:
@@ -969,6 +961,8 @@ snapshots:
 
   '@esbuild/linux-loong64@0.14.54':
     optional: true
+
+  '@funnelish/smooth-dnd@1.0.0': {}
 
   '@headlessui/vue@1.7.23(vue@3.5.41)':
     dependencies:
@@ -1736,11 +1730,6 @@ snapshots:
   vue-router@4.6.4(vue@3.5.41):
     dependencies:
       '@vue/devtools-api': 6.6.4
-      vue: 3.5.41
-
-  vue3-smooth-dnd@file:packages/lib(vue@3.5.41):
-    dependencies:
-      smooth-dnd: link:../../../../Library/pnpm/global/5/node_modules/smooth-dnd
       vue: 3.5.41
 
   vue@3.5.41:
