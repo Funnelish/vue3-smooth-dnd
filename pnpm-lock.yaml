@@ -6,7 +6,11 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      '@funnelish/smooth-dnd':
+        specifier: 1.0.0
+        version: 1.0.0
 
   packages/example:
     dependencies:
