@@ -54,8 +54,8 @@ importers:
   packages/lib:
     dependencies:
       smooth-dnd:
-        specifier: npm:@funnelish/smooth-dnd@^1.0.0
-        version: '@funnelish/smooth-dnd@1.0.0'
+        specifier: npm:@funnelish/smooth-dnd@^1.0.1
+        version: '@funnelish/smooth-dnd@1.0.1'
     devDependencies:
       rollup:
         specifier: ^2.43.0
