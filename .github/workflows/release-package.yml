@@ -52,15 +52,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@funnelish'
 
-      - name: Debug dependency state
-        run: |
-          pnpm --version
-          git rev-parse HEAD
-          echo '--- packages/lib/package.json'
-          sed -n '1,120p' packages/lib/package.json
-          echo '--- pnpm-lock.yaml'
-          grep -n "@funnelish/smooth-dnd" pnpm-lock.yaml || true
-
       # --filter keeps the demo app out of the install entirely.
       # --ignore-scripts blocks arbitrary install-time code from the
       # dependency tree; the rollup build needs no install hooks.

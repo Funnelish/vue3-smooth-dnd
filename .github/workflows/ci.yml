@@ -39,15 +39,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@funnelish'
 
-      - name: Debug dependency state
-        run: |
-          pnpm --version
-          git rev-parse HEAD
-          echo '--- packages/lib/package.json'
-          sed -n '1,120p' packages/lib/package.json
-          echo '--- pnpm-lock.yaml'
-          grep -n "@funnelish/smooth-dnd" pnpm-lock.yaml || true
-
       # NPM_AUTH_TOKEN, not GITHUB_TOKEN: @funnelish/smooth-dnd is published by
       # a different repo, and this repo's GITHUB_TOKEN has no read access to
       # it (403). Same org-level secret fnsh_base already installs with.
