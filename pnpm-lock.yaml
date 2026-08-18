@@ -93,8 +93,8 @@ packages:
     cpu: [loong64]
     os: [linux]
 
-  '@funnelish/smooth-dnd@1.0.0':
-    resolution: {integrity: sha512-4WNparc7OVj4i740pOxEsj/Egs8TV7IM7RZlCSSM5m0CHxCRu97v/xcj5nz+Q/bLklu6AL1P0K5jW3IrZTMRUg==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.0/41b23a39c236d2f714002b81504bd41c11462e17}
+  '@funnelish/smooth-dnd@1.0.1':
+    resolution: {integrity: sha512-0TY7rrrb9ukseo42GJLDbOrnX3Sili33zPQz9htGuu1JeY6vKN8z32m3324eSaNagureiB1AoFzEgvO83+2PaQ==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.1/396303afa790125f42978f4f2431e818fa7b0955}
     engines: {node: '>=22.13'}
 
   '@headlessui/vue@1.7.23':
@@ -779,6 +779,11 @@ packages:
     resolution: {integrity: sha512-u82N74LFzG8ca+dD8puPnplTXoGH4fTPpVGuIbt36G3qvNlkvfD0lEAZSxaly3KX8TS/L1A1gsCEmvKmBcVbkQ==}
     engines: {node: ^10 || ^12 || >=14}
 
+  prettier@3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   pretty-hrtime@1.0.3:
     resolution: {integrity: sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==}
     engines: {node: '>= 0.8'}
@@ -962,7 +967,9 @@ snapshots:
   '@esbuild/linux-loong64@0.14.54':
     optional: true
 
-  '@funnelish/smooth-dnd@1.0.0': {}
+  '@funnelish/smooth-dnd@1.0.1':
+    dependencies:
+      prettier: 3.9.6
 
   '@headlessui/vue@1.7.23(vue@3.5.41)':
     dependencies:
@@ -1589,6 +1596,8 @@ snapshots:
       nanoid: 3.3.18
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  prettier@3.9.6: {}
 
   pretty-hrtime@1.0.3: {}
 
