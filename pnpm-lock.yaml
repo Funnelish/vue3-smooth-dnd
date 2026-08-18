@@ -101,10 +101,6 @@ packages:
     resolution: {integrity: sha512-0TY7rrrb9ukseo42GJLDbOrnX3Sili33zPQz9htGuu1JeY6vKN8z32m3324eSaNagureiB1AoFzEgvO83+2PaQ==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.1/396303afa790125f42978f4f2431e818fa7b0955}
     engines: {node: '>=22.13'}
 
-  '@funnelish/smooth-dnd@1.0.1':
-    resolution: {integrity: sha512-0TY7rrrb9ukseo42GJLDbOrnX3Sili33zPQz9htGuu1JeY6vKN8z32m3324eSaNagureiB1AoFzEgvO83+2PaQ==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.1/396303afa790125f42978f4f2431e818fa7b0955}
-    engines: {node: '>=22.13'}
-
   '@headlessui/vue@1.7.23':
     resolution: {integrity: sha512-JzdCNqurrtuu0YW6QaDtR2PIYCKPUWq28csDyMvN4zmGccmE7lz40Is6hc3LA4HFeCI7sekZ/PQMTNmn9I/4Wg==}
     engines: {node: '>=10'}
@@ -979,9 +975,6 @@ snapshots:
     dependencies:
       prettier: 3.9.6
 
-  '@funnelish/smooth-dnd@1.0.1':
-    dependencies:
-      prettier: 3.9.6
 
   '@headlessui/vue@1.7.23(vue@3.5.41)':
     dependencies:
