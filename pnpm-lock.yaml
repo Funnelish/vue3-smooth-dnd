@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@funnelish/smooth-dnd':
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.0.1
+        version: 1.0.1
 
   packages/example:
     dependencies:
@@ -96,6 +96,10 @@ packages:
     engines: {node: '>=12'}
     cpu: [loong64]
     os: [linux]
+
+  '@funnelish/smooth-dnd@1.0.1':
+    resolution: {integrity: sha512-0TY7rrrb9ukseo42GJLDbOrnX3Sili33zPQz9htGuu1JeY6vKN8z32m3324eSaNagureiB1AoFzEgvO83+2PaQ==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.1/396303afa790125f42978f4f2431e818fa7b0955}
+    engines: {node: '>=22.13'}
 
   '@funnelish/smooth-dnd@1.0.1':
     resolution: {integrity: sha512-0TY7rrrb9ukseo42GJLDbOrnX3Sili33zPQz9htGuu1JeY6vKN8z32m3324eSaNagureiB1AoFzEgvO83+2PaQ==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.1/396303afa790125f42978f4f2431e818fa7b0955}
@@ -970,6 +974,10 @@ snapshots:
 
   '@esbuild/linux-loong64@0.14.54':
     optional: true
+
+  '@funnelish/smooth-dnd@1.0.1':
+    dependencies:
+      prettier: 3.9.6
 
   '@funnelish/smooth-dnd@1.0.1':
     dependencies:

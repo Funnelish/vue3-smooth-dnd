@@ -12,6 +12,6 @@
     "lib": "pnpm --filter @funnelish/vue3-smooth-dnd build"
   },
   "dependencies": {
-    "@funnelish/smooth-dnd": "1.0.0"
+    "@funnelish/smooth-dnd": "1.0.1"
   }
 }
