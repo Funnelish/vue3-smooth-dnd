@@ -27,8 +27,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0(@vue/compiler-sfc@3.5.41)(rolldown@1.2.5)(rollup@4.62.5)(vite@8.2.2(yaml@2.9.0))(vue@3.5.41)
       vue3-smooth-dnd:
-        specifier: file:../lib
-        version: link:../lib
+        specifier: npm:@funnelish/smooth-dnd@^1.0.1
+        version: '@funnelish/smooth-dnd@1.0.1'
       vuex:
         specifier: ^4.1.0
         version: 4.1.0(vue@3.5.41)
@@ -55,8 +55,8 @@ importers:
   packages/lib:
     dependencies:
       smooth-dnd:
-        specifier: file:../../../smooth-dnd
-        version: '@funnelish/smooth-dnd@file:../smooth-dnd'
+        specifier: npm:@funnelish/smooth-dnd@^1.0.1
+        version: '@funnelish/smooth-dnd@1.0.1'
     devDependencies:
       rollup:
         specifier: 4.62.5
@@ -107,10 +107,6 @@ packages:
 
   '@funnelish/smooth-dnd@1.0.1':
     resolution: {integrity: sha512-0TY7rrrb9ukseo42GJLDbOrnX3Sili33zPQz9htGuu1JeY6vKN8z32m3324eSaNagureiB1AoFzEgvO83+2PaQ==, tarball: https://npm.pkg.github.com/download/@funnelish/smooth-dnd/1.0.1/396303afa790125f42978f4f2431e818fa7b0955}
-    engines: {node: '>=22.13'}
-
-  '@funnelish/smooth-dnd@file:../smooth-dnd':
-    resolution: {directory: ../smooth-dnd, type: directory}
     engines: {node: '>=22.13'}
 
   '@headlessui/vue@1.7.23':
@@ -1069,10 +1065,6 @@ snapshots:
       '@babel/helper-validator-identifier': 8.0.4
 
   '@funnelish/smooth-dnd@1.0.1':
-    dependencies:
-      prettier: 3.9.6
-
-  '@funnelish/smooth-dnd@file:../smooth-dnd':
     dependencies:
       prettier: 3.9.6
 
