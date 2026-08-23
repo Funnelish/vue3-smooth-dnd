@@ -28,7 +28,11 @@ body,
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.75), transparent 24rem),
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.75),
+      transparent 24rem
+    ),
     linear-gradient(135deg, #f2ead8 0%, #f7f1df 45%, #efe4cd 100%);
   color: var(--ink);
   overflow: hidden;
@@ -125,7 +129,10 @@ textarea {
   border-radius: 14px;
   color: var(--ink-muted);
   font-size: 14px;
-  transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
 }
 
 .menu-link:hover {
@@ -175,7 +182,9 @@ textarea {
   background: var(--accent);
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.18s ease, transform 0.18s ease;
+  transition:
+    background-color 0.18s ease,
+    transform 0.18s ease;
 }
 
 .source-code:hover {
@@ -217,7 +226,10 @@ textarea {
     height: 3px;
     border-radius: 999px;
     background: var(--ink);
-    transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease,
+      top 0.2s ease;
   }
 
   .nav-button span:nth-child(1) {
