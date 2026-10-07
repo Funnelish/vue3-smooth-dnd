@@ -8,6 +8,7 @@ yarn-error.log
 build/.rpt2_cache
 tests/coverage
 /coverage
+/.pnpm-store
 
 
 # Editor directories and files
